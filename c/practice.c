@@ -2,5 +2,11 @@
 
  int main(void)
  {
-    printf("%d\n", 123);
+    int n;
+    
+    printf("Enter no: ");
+    scanf("%d", &n);
+
+    printf("the no is %d\n", n);
+    return 0;
  }
