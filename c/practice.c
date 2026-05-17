@@ -2,11 +2,14 @@
 
  int main(void)
  {
-    int n;
-    
-    printf("Enter no: ");
-    scanf("%d", &n);
+    int r;
+    float area;
 
-    printf("the no is %d\n", n);
+    printf("Enter radius: ");
+    scanf("%d", &r);
+
+    area = (float) 3.14 * r * r;
+    printf("Area is %.2f\n", area);
+
     return 0;
  }
