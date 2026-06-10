@@ -2,35 +2,32 @@
 
 int main(void)
 {
-    int n, k;
+    int n;
     printf("Enter n: ");
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++)
     {
+        // spaces
         for (int j = 1; j <= n - i; j++)
         {
             printf(" ");
         }
-        for (k = 1; k <= i; k++)
+
+        // increasing numbers
+        for (int k = 1; k <= i; k++)
         {
             printf("%d", k);
         }
-        for (int l = k - 2; l >= 1; l--)
+
+        // decreasing numbers
+        for (int l = i - 1; l >= 1; l--)
         {
-            if (i == 1)
-            {
-                continue;
-            }
-            else
-            {
-                printf("%d", l);
-            }
+            printf("%d", l);
         }
-        for (int m = 1; m <= n - i; m++)
-        {
-            printf(" ");
-        }
+
         printf("\n");
     }
+
+    return 0;
 }
